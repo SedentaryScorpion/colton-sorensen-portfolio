@@ -8,7 +8,7 @@ for (const [id, gallery] of Object.entries(galleries)) {
   gallery.photos.forEach((photo, index) => {
     const figure = document.createElement("figure");
     const image = document.createElement("img");
-    image.src = `gallery/performance/${photo}.jpg`;
+    image.src = `performance-${photo}.jpg`;
     image.alt = `${gallery.label} photograph ${index + 1}`;
     image.loading = "lazy";
     figure.append(image);
